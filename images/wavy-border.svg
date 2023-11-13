@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1921 706" width="1921" height="706">
+	<title>wavy-border-svg</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(131.514,935.77,-1967.151,276.465,470.971,-192.489)">
+			<stop offset="0" stop-color="#ead2ac"/>
+			<stop offset=".703" stop-color="#ead2ac"/>
+			<stop offset="1" stop-color="#ead2ac"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+	</style>
+	<path id="bg_footer-prex" class="s0" d="m0 19.1c312-48.8 496.2 97.5 1009.9 18.8 513.7-78.7 702.1-17.2 910.1 26.8-1.8 45.4 0.3 640.5 0.3 640.5h-1920c0 0 0-646.7-0.3-686.1z"/>
+</svg>

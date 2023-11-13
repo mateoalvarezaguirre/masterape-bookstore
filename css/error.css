@@ -1,0 +1,51 @@
+main {
+    background-color: #ead2ac;
+}
+
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    padding: 0 25px;
+}
+
+.error-container img {
+    width: 40%;
+}
+
+.error-container .error-text {
+    width: 40%;
+    font-size: 2rem;
+}
+
+.error-container .error-text a {
+    color: unset;
+    text-decoration: none;
+}
+
+.error-container .error-text .button:hover {
+    background-color: #1e1e1e;
+    color: #EAD2AC;
+}
+
+@media (max-width: 600px) {
+    .error-container {
+        flex-direction: column;
+    }
+
+    .error-container img {
+        width: 90%;
+    }
+
+    .error-container .error-text {
+        width: 80%;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .error-container .error-text h1{
+        text-align: center;
+    }
+}

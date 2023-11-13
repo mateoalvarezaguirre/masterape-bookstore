@@ -1,0 +1,139 @@
+body {
+    background-color: #946E83;
+}
+
+nav {
+    background-color: #946E83;
+}
+
+#register {
+    background-color: #946E83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+
+.register_container {
+    max-width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register_image {
+    width: 60%;
+}
+
+.register_form {
+    min-height: 550px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EAD2AC;
+    padding: 0 45px;
+    border-radius: 15px;
+}
+
+.register_form h1 {
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+.register_form form {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 0 25px;
+}
+
+.register_form .form_field {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.register_form .form_field input {
+    border: 1.9px solid #1e1e1e;
+    border-radius: 5px;
+    color: #1e1e1e;
+    padding-left: 5px;
+    min-height: 45px;
+    width: 412px;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+}
+
+.register_form .form_field input.error {
+    border: 1.9px solid #ff1744;
+    color: #ff1744;
+}
+
+.register_form .form_field input.success {
+    border: 1.9px solid #4caf50;
+    color: #4caf50;
+}
+
+.register_form .form_field .error-message {
+    margin: 10px 0 15px;
+    color: #ff1744;
+}
+
+.register_form .form_field input:focus-visible {
+    outline: none;
+}
+
+.register_btn {
+    background-color: #EAD2AC;
+    width: 250px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.register_btn:hover {
+    background-color: #1e1e1e;
+    color: #946E83;
+}
+
+@media (max-width: 1010px) {
+    .register_btn {
+        align-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding-top: 80px;
+    }
+
+    .register_container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .register_form {
+        width: 60%;
+        text-align: center;
+    }
+
+    .register_form form {
+        align-items: center;
+    }
+
+    .register_btn {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .register_form .form_field input {
+        width: 100%;
+    }
+
+    .register_form .form_field .error-message {
+        font-size: 12px;
+        text-align: start;
+    }
+}

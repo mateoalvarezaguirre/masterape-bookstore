@@ -1,0 +1,49 @@
+body {
+    background-color: #1e1e1e;
+}
+
+main {
+    padding: 0 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about {
+    max-width: 1120px;
+    color: #EAD2AC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+main section {
+    font-size: 18px;
+    margin-bottom: 15px;
+    max-width: 650px;
+}
+
+#about p {
+    max-width: 650px;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1010px) {
+    #about {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 600px) { 
+    main {
+        padding-top: 40px;
+    }
+}
