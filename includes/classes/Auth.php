@@ -25,7 +25,7 @@ class Auth {
                 ':email' => $dto->getUsernameOrEmail(),
                 ':user_name' => $dto->getUsernameOrEmail(),
             ]
-        )[0];
+        );
 
         if (!$user) {
             Response::send(
@@ -35,6 +35,8 @@ class Auth {
                 401
             );
         }
+
+        $user = $user[0];
 
         if (!password_verify($dto->getPassword(), $user['hash'])) {
             Response::send(
