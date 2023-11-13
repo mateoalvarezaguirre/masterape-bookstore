@@ -26,7 +26,6 @@ const contact = async (e) => {
             successPage.classList.add('active');
         }, 1500);
 
-
     } catch (error) {
         showErrorToast(error);
     }
