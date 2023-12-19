@@ -499,6 +499,7 @@ footer {
 
     nav {
         position: fixed;
+        top: 0;
         width: 100vw;
         z-index: 1;
         background-color: #1e1e1e;

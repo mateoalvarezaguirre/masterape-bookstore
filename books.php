@@ -15,7 +15,7 @@ try {
     return $book->$action();
 } catch(\Throwable $th) {
     Response::error();
-}
+} 
 
 function invalidActionResponse(): void
 {

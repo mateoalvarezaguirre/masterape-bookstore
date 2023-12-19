@@ -14,6 +14,13 @@ abstract class Request {
         return false;
     }
 
+    public static function presentFile($key){
+        if(isset($_FILES[$key])){
+            return $_FILES[$key];
+        }
+        return false;
+    }
+
     public static function isPOST(): bool
     {
         return $_SERVER['REQUEST_METHOD'] === 'POST';

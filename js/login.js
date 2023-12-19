@@ -40,7 +40,7 @@ const login = async (e) => {
             });
     
             setTimeout(() => {
-                window.location.replace('./');
+                window.location.replace('./welcome.php');
             }, 1000);
         }, 2000);
 

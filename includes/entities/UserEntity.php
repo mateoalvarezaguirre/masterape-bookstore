@@ -8,6 +8,8 @@ class UserEntity {
 
     public function __construct(
         private readonly int $id,
+        private readonly string $firstName,
+        private readonly string $lastName,
         private readonly string $userName,
         private readonly string $email,
         private readonly RolesEnum $userRole
@@ -16,6 +18,16 @@ class UserEntity {
     public function getId(): int
     {
         return $this->id;
+    }
+
+    public function getFirstName() : string 
+    {
+        return $this->firstName;
+    }
+
+    public function getLastName() : string 
+    {
+        return $this->lastName;
     }
 
     public function getUserName(): string
@@ -31,5 +43,10 @@ class UserEntity {
     public function getUserRole(): RolesEnum
     {
         return $this->userRole;
+    }
+
+    public function getFullName(): string
+    {
+        return $this->firstName . ' ' . $this->lastName;
     }
 }

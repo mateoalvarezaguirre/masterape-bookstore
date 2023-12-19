@@ -32,6 +32,7 @@ class DB {
 
             return $query->execute();
         } catch(PDOException $e) {
+            echo $e->getMessage();die;
             header('Location: ./error.php');
             exit();
         }

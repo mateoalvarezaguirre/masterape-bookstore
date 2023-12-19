@@ -5,7 +5,8 @@ $folders = [
     'classes',
     'dtos',
     'entities',
-    'enums'
+    'enums',
+    'repositories'
 ];
 
 foreach ($folders as $folder){

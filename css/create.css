@@ -1,0 +1,91 @@
+nav {
+    background-color: #eaba6b;
+}
+
+h1{
+    text-align: center;
+}
+
+main {
+    background-color: unset;
+}
+
+#book_form {
+    width: 550px;
+    margin: 35px auto;
+    border-radius: 10px;
+    background: #1e1e1e;
+    color: #EAD2AC;
+    padding: 10px 25px;
+    box-shadow: 0px 3px 20px #0c0c0c;
+    display: flex;
+    flex-direction: column;
+}
+
+.data_box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.data_box label {
+    width: 20%;
+}
+
+.form_field {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form_field input {
+    border: 1.9px solid #eaba6b;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 10px;
+    min-height: 45px;
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    text-align: start;
+    width: 95%;
+    color: #FFF;
+    outline: none;
+}
+
+.form_field textarea {
+    width: 95%;
+    background: transparent;
+    color: #fff;
+    border-radius: 8px;
+    min-height: 50px;
+    border: 1.9px solid #eaba6b;
+    padding: 10px;
+    outline: none;
+}
+
+.actions {
+    width: 50%;
+    align-self: center;
+}
+
+.actions .button {
+    cursor: pointer;
+}
+
+#book_form .form_field input.error, #book_form .form_field textarea.error {
+    border: 1.9px solid #ff1744;
+    color: #ff1744;
+}
+
+#book_form .form_field input.success, #book_form .form_field textarea.success {
+    border: 1.9px solid #4caf50;
+    color: #4caf50;
+}
+
+#book_form .form_field .error-message {
+    margin: 10px 0 15px;
+    color: #ff1744;
+}

@@ -17,7 +17,7 @@ class Auth {
     public function login(LoginUserDTO $dto): void
     {
         $user = $this->db->query(
-            "SELECT id, user_name, email, role_id, hash 
+            "SELECT *
             FROM users 
             WHERE email = :email OR user_name = :user_name 
             LIMIT 1",
@@ -49,6 +49,8 @@ class Auth {
         
         $_SESSION['user'] = new UserEntity(
                                 $user['id'],
+                                $user['first_name'],
+                                $user['last_name'],
                                 $user['user_name'],
                                 $user['email'],
                                 RolesEnum::from($user['role_id'])
@@ -72,5 +74,10 @@ class Auth {
         }
 
         return $_SESSION['user']->getUserRole() === RolesEnum::ADMIN_USER;
+    }
+
+    public static function getUser(): UserEntity
+    {
+        return $_SESSION['user'];
     }
 }

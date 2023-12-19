@@ -3,7 +3,11 @@ require_once('./includes/autoload.php');
 
 use Includes\Classes\Auth;
 
-$logged = (new Auth)->isLogged();
+$auth = new Auth();
+
+$logged = $auth->isLogged();
+
+$isAdmin = $auth->isAdmin();
 ?>
 
 <header>
@@ -15,6 +19,11 @@ $logged = (new Auth)->isLogged();
                 </a>
             </div>
             <div class="menu_box">
+            <?php if($logged && $isAdmin) : ?>
+                <div class="font_sacramento">
+                    <a href="./dashboard.php">Dashboard</a>
+                </div>
+            <?php endif; ?>
                 <div class="font_sacramento">
                     <a href="./store.php">Store</a>
                 </div>
@@ -52,6 +61,11 @@ $logged = (new Auth)->isLogged();
                 </a>
             </div>
             <div class="menu_box">
+                <?php if($logged && $isAdmin) : ?>
+                    <div class="font_sacramento">
+                        <a href="./dashboard.php">Dashboard</a>
+                    </div>
+                <?php endif; ?>
                 <div class="font_sacramento">
                     <a href="./store.php">Store</a>
                 </div>
